@@ -13,8 +13,6 @@ import java.util.ArrayList;
  */
 public class AlgorithmUnlimitedScopeNonRecursive extends Algorithm {
 
-    ArrayList<int[]> path = new ArrayList<int[]>();
-
     /*
      * Default constructor for an AlgorithmUnlimitedScopeNonRecursive.
      *
