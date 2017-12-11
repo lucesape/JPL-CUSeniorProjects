@@ -11,17 +11,17 @@ import java.util.ArrayList;
 /**
  * Class which implements the path-finding algorithm without a limited field of view.
  */
-public class AlgorithmUnlimitedScope extends Algorithm {
+public class AlgorithmUnlimitedScopeNonRecursive extends Algorithm {
 
     ArrayList<int[]> path = new ArrayList<int[]>();
 
     /*
-     * Default constructor for an AlgorithmUnlimitedScope.
+     * Default constructor for an AlgorithmUnlimitedScopeNonRecursive.
      *
      * @param map The terrain map
      * @param rover The rover
      */
-    public AlgorithmUnlimitedScope(TerrainMap m, MarsRover r) {
+    public AlgorithmUnlimitedScopeNonRecursive(TerrainMap m, MarsRover r) {
         map = m;
         rover = r;
     }

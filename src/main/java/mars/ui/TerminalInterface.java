@@ -1,9 +1,9 @@
 package mars.ui;
 import com.sun.corba.se.impl.io.TypeMismatchException;
 
+import mars.algorithm.AlgorithmUnlimitedScopeNonRecursive;
 import mars.coordinate.Coordinate;
 import mars.algorithm.AlgorithmLimitedScope;
-import mars.algorithm.AlgorithmUnlimitedScope;
 import mars.map.GeoTIFF;
 import mars.map.TerrainMap;
 import mars.rover.MarsRover;
@@ -156,7 +156,7 @@ public class TerminalInterface extends UserInterface {
         //Start Rover then run its algorithm until the output file is populated with results.
         if (alg.equalsIgnoreCase("U")) {
             MarsRover r = new MarsRover(slope, startCoords, endCoords, mapPath);
-            algorithm = new AlgorithmUnlimitedScope(map, r);
+            algorithm = new AlgorithmUnlimitedScopeNonRecursive(map, r);
             algorithm.findPath();
         }
         else if (alg.equalsIgnoreCase("L")) {

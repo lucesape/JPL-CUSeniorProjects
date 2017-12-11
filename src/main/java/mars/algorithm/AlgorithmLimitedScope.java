@@ -15,7 +15,7 @@ public class AlgorithmLimitedScope extends Algorithm {
     ArrayList<Coordinate> path = new ArrayList<Coordinate>();
 
     /*
-     * Default constructor for an AlgorithmUnlimitedScope.
+     * Default constructor for an AlgorithmUnlimitedScopeNonRecursive.
      *
      * @param map The terrain map
      * @param rover The rover
